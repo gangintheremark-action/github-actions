@@ -41,19 +41,19 @@ jobs:
       with:  
         payload: |
           {
-            "attachments": {
+            "attachments": [
               {
                 "pretext": "create repo result",
                 "color": "28a745",
-                "fields": {
+                "fields": [
                   {
                     "title": "create repo result ${{ steps.create-repo.outcome }}",
                     "short": true,
                     "value": "${{ inputs.prefix }}-${{ inputs.name }}"
                   }
-                } 
+                ] 
               }
-            }
+            ]
           }
       env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}å
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
