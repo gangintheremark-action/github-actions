@@ -1,4 +1,4 @@
-name: create-repo
+name: create-repo-automation
 on:
   workflow_dispatch:
     inputs:
