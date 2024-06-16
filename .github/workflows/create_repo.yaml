@@ -41,6 +41,7 @@ jobs:
       with:  
         payload: |
           {
+            "text": "Repository creation result",
             "attachments": [
               {
                 "pretext": "create repo result",
